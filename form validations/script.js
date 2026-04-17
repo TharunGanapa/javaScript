@@ -9,4 +9,10 @@ const validateForm = (event) => {
     if (username === "" && password === ""){
         msg.innerText = "please Enter"
     }
+    else if(username === ""){
+        msg.innerText = "please enter username";
+    }
+    else if(password === ""){
+        msg.innerText = "please enter password";
+    }
 }
